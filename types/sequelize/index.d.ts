@@ -3354,6 +3354,11 @@ declare namespace sequelize {
          * Include options. See `find` for details
          */
         include?: Array<Model<any, any> | IncludeOptions>;
+                     
+        /**
+         * To apply distinct on an column
+         */
+        col?: string;
 
         /**
          * Apply COUNT(DISTINCT(col))
